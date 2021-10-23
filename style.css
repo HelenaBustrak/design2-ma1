@@ -1,0 +1,276 @@
+:root {
+    --primary-color: #664E32;
+    --secondary-color: #cc9e69;
+    --light-yellow-brown: #E6AF70;
+    --padding-mobile: 0 8%;
+}
+
+html {
+    box-sizing: border-box;
+
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+}
+
+h1, h2 ,h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+h1 {
+    color: white;
+    font-size: 70px;
+    margin: 0;
+    text-shadow: 0px 3px 6px #0000003d;
+}
+
+h1 span {
+    display: block;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    margin-top: 270px;
+    color: white;
+    font-size: 25px;
+    text-shadow: 0px 3px 6px #000000;
+    text-transform: uppercase;
+}
+
+h4 {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+header {
+    background-color: white;
+}
+
+header .fa-bars, header .fa-shopping-cart {
+    font-size: 1.5em;
+    color: var(--primary-color);
+    margin-left: 20px;
+}
+
+#header-logo {
+    height: 60px;
+    padding-left: 8%;
+}
+
+
+
+.fa-shopping-cart, .label-hamburger {
+    float: right;
+}
+
+.label-hamburger {
+    padding-right: 8%;
+    margin-top: 1.5em;
+    cursor: pointer;
+}
+
+.fa-shopping-cart {
+    margin-top: 1em;
+}
+
+
+
+
+
+
+nav {
+    display: none;
+    background-color:  rgba(179, 136, 66, 0.329);
+    height: 600px;
+}
+
+
+ul {
+    padding: var(--padding-mobile);
+    list-style-type: none;
+    margin: 0;
+}
+
+li {
+    padding: 1em 0;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.searchbar {
+    border-style: unset;
+    width: 70%;
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    margin-top: 150px;
+    padding: 13px;
+
+}
+
+.fa-search {
+    background-color: white;
+    justify-content: center;
+    margin: 0;
+    padding: 14px;
+    padding-top: 13px;
+    font-size: 18px;
+}
+
+#hamburger-menu {
+    display:none;
+}
+
+
+#hamburger-menu:checked ~ nav {
+    display: block;
+}
+
+
+
+
+.campaign-one__image {
+    background-image: url("images/collov-home-design-js8AQlw71HA-unsplash\ kopi.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    padding: 200px 8%;
+    
+    
+}
+
+.button {
+    padding: 1em;
+    border-radius: 0;
+    border-style: unset;
+    background-color: var(--light-yellow-brown);
+    border: 2px solid var(--light-yellow-brown);
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.button:hover {
+    background-color: unset;
+    color: white;
+}
+
+
+
+.get-inspired {
+    padding: var(--padding-mobile);
+    margin: 50px 0;
+}
+
+.campaign-two {
+    display:flex;
+    height: 450px;
+    text-align: center;
+}
+
+
+.campaign-two__image--1 {
+    background-image: url("images/nine-koepfer-OZiflZqq0N0-unsplash\ kopi.jpg");
+    background-size: cover;
+    background-position: center center;
+    width: 50%;
+    padding: var(--padding-mobile);
+}
+
+.campaign-two__image--2 {
+    background-image: url("images/denys-striyeshyn-wJ7yGwz2-00-unsplash\ kopi.jpg");
+    background-size: cover;
+    background-position: center center;
+    width: 50%;
+    padding: var(--padding-mobile);
+}
+
+.favourites {
+
+    margin: 50px 0;
+    padding: var(--padding-mobile);
+    
+}
+
+.favourites-container {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.favourites-item {
+    flex: 0 0 auto;
+    margin: 0 10px;
+    background-color:  rgba(179, 136, 66, 0.329);
+}
+
+.favourites-item img {
+    display: inline;
+    height: 200px;
+}
+
+.favourites-item h4, .favourites-item p {
+    padding: 0 10px;
+}
+
+footer {
+    background-color: var(--primary-color);
+    height: 300px;
+    color: white;
+    padding:var(--padding-mobile);
+}
+
+@media (min-width: 1300px) {
+
+    :root {
+        --padding-mobile: unset;
+    }
+    .label-hamburger {
+        display: none;
+    }
+
+    nav {
+        display: block;
+        height: 70px;
+        line-height: 70px;
+        padding: 0 12%;
+    }
+
+    ul {
+        display: flex;
+    }
+
+    li {
+        padding: 0;
+    }
+
+    li a {
+        font-size: 16px;
+        margin-right: 40px;
+        padding: 0;
+    }
+
+    .searchbar  {
+        margin: 0;
+        padding: 10px;
+        width: 300px;
+    }
+    .fa-search {
+        padding: 10px;
+        padding-bottom: 11px;
+    }
+
+    .container-desktop {
+        margin: 0 12%;
+    }
+}
