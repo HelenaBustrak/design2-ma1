@@ -16,7 +16,12 @@ html {
 body {
     margin: 0;
     font-family: "Lato", sans-serif;
+    background-image: url("images/concrete-texture.png");
 }
+
+
+/* headings */
+
 
 h1, h2 ,h3 {
     font-family: 'Playfair Display', serif;
@@ -49,6 +54,9 @@ h4 {
     margin-top: 10px;
 }
 
+
+/* header and nav */
+
 header {
     background-color: white;
 }
@@ -64,8 +72,6 @@ header .fa-bars, header .fa-shopping-cart {
     padding-left: 8%;
 }
 
-
-
 .fa-shopping-cart, .label-hamburger {
     float: right;
 }
@@ -80,17 +86,11 @@ header .fa-bars, header .fa-shopping-cart {
     margin-top: 1em;
 }
 
-
-
-
-
-
 nav {
     display: none;
-    background-color:  rgba(179, 136, 66, 0.329);
+    background-color:  rgba(179, 136, 88);
     height: 600px;
 }
-
 
 ul {
     padding: var(--padding-mobile);
@@ -119,8 +119,9 @@ li a {
 }
 
 .fa-search {
-    background-color: white;
     justify-content: center;
+    background-color: white;
+    color: var(--primary-color);
     margin: 0;
     padding: 14px;
     padding-top: 13px;
@@ -137,17 +138,7 @@ li a {
 }
 
 
-
-
-.campaign-one__image {
-    background-image: url("images/collov-home-design-js8AQlw71HA-unsplash\ kopi.jpg");
-    background-size: cover;
-    background-position: center center;
-    height: 500px;
-    padding: 200px 8%;
-    
-    
-}
+/* button */
 
 .button {
     padding: 1em;
@@ -166,10 +157,29 @@ li a {
 
 
 
+/* first section*/
+
+.campaign-one__image {
+    background-image: url("images/collov-home-design-js8AQlw71HA-unsplash\ kopi.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    padding: 200px 8%;
+    
+    
+}
+
+
+/* second section */
+
 .get-inspired {
     padding: var(--padding-mobile);
-    margin: 50px 0;
+    margin: 100px 0 50px 0;
 }
+
+
+
+/* third section */
 
 .campaign-two {
     display:flex;
@@ -194,46 +204,84 @@ li a {
     padding: var(--padding-mobile);
 }
 
-.favourites {
 
-    margin: 50px 0;
+
+/* fourth section */
+
+
+.bestsellers {
+
+    margin: 50px 0 200px 0;
     padding: var(--padding-mobile);
     
 }
 
-.favourites-container {
+.bestsellers-container {
     display: flex;
     flex-wrap: nowrap;
     overflow-x: auto;
 }
 
-.favourites-item {
+.bestsellers-item {
     flex: 0 0 auto;
     margin: 0 10px;
     background-color:  rgba(179, 136, 66, 0.329);
 }
 
-.favourites-item img {
+.bestsellers-item img {
     display: inline;
-    height: 200px;
+    height: 150px;
 }
 
-.favourites-item h4, .favourites-item p {
-    padding: 0 10px;
+.bestsellers-item h4, .bestsellers-item p {
+    padding: 0 15px;
 }
+
+
+
+/* footer */
+
 
 footer {
     background-color: var(--primary-color);
-    height: 300px;
     color: white;
-    padding:var(--padding-mobile);
+    padding: 30px 0;
+    text-align: center;
 }
+
+.footer-socials {
+    font-size: 1.5em;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: white;
+    margin-bottom: 10px;
+}
+
+
 
 @media (min-width: 1300px) {
 
     :root {
         --padding-mobile: unset;
     }
+
+    #header-logo {
+        height: 80px;
+        padding-left: 12%;
+    }
+
+    .fa-shopping-cart {
+        margin-top: 1.7em;
+    }
+
     .label-hamburger {
         display: none;
     }
@@ -251,25 +299,83 @@ footer {
 
     li {
         padding: 0;
+        margin-right: 30px;
     }
 
     li a {
         font-size: 16px;
-        margin-right: 40px;
         padding: 0;
+    }
+
+    li a:hover {
+        color: white;
+        transition: 0.2s;
+    }
+
+    .search {
+        width: 70%;
+        text-align: end;
+        float: right;
+        margin: 0;
     }
 
     .searchbar  {
         margin: 0;
         padding: 10px;
-        width: 300px;
     }
+
+
     .fa-search {
         padding: 10px;
         padding-bottom: 11px;
+        
     }
 
     .container-desktop {
         margin: 0 12%;
+    }
+
+    .campaign-one__image {
+        height: 650px;
+        padding: 300px 8%;
+    }
+
+    .fa-shopping-cart {
+        padding-right: 12%;
+    }
+
+    .get-inspired {
+        max-width: 80%;
+    }
+
+    .campaign-two {
+        display:flex;
+        height: 600px;
+        text-align: start;
+    }
+
+    .campaign-two__image--1, .campaign-two__image--2 {
+        padding-left: 8%;
+    }
+
+    .campaign-two h3 {
+        margin-top: 350px;
+    }
+
+    .bestsellers-item img {
+        height: 230px;
+    }
+
+    .footer-links {
+        display: flex;
+        margin-top: 30px;
+    }
+}
+
+@media (min-width: 1600px) {
+
+    .campaign-one__image {
+        height: 750px;
+        padding: 400px 8%;
     }
 }
