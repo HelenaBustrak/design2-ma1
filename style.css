@@ -88,7 +88,7 @@ header .fa-bars, header .fa-shopping-cart {
 
 nav {
     display: none;
-    background-color:  rgba(179, 136, 88);
+    background-color:  rgba(179, 136, 66, 0.329);
     height: 600px;
 }
 
