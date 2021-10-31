@@ -7,7 +7,7 @@ h1, .campaign-lounge-header h2, .campaign-lounge-header p, .breadcrumbs a {
 }
 
 h1 {
-    margin-top: 18px;
+    margin-top: 15px;
     font-size: 40px;
 }
 
@@ -92,6 +92,8 @@ footer {
     h1 {
         margin-top: 140px;
     }
+    
+
 
 }
 
