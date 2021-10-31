@@ -1,0 +1,115 @@
+section {
+    margin-bottom: 70px;
+}
+
+h1, .campaign-lounge-header h2, .campaign-lounge-header p, .breadcrumbs a {
+    text-shadow: 2px 0px 10px rgba(0, 0, 0, 0.973);
+}
+
+h1 {
+    margin-top: 18px;
+    font-size: 40px;
+}
+
+.campaign-lounge-header h2 {
+    font-size: 30px;
+    color: white;
+}
+
+h2 span {
+
+    font-size: 20px;
+    display: block;
+}
+
+.campaign-lounge-header p {
+    color: white;
+}
+
+.campaign-lounge-header {
+    background-image: url("images/lounge-header-image_products-page.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 400px;
+    padding: 0 8%;
+    margin-bottom: 1.5em;
+    
+}
+
+.product span {
+    text-decoration: line-through;
+    margin-right: 5px;
+}
+
+.breadcrumbs {
+    padding-top: 10px;
+    display: flex;
+    color: white;
+}
+
+.breadcrumbs a {
+    text-decoration: none;
+    color: white;
+    margin: 0 5px;
+}
+
+.breadcrumbs .active {
+    text-decoration: underline;
+}
+
+.lounge-products, .kitchen, .bedroom  {
+
+    padding: var(--padding-mobile);
+    
+}
+
+.bedroom {
+    margin-bottom: 2em;
+}
+
+.button {
+    margin-top: 20px;
+}
+
+.button:hover {
+    color: black;
+}
+
+footer {
+    margin-top: 100px;
+}
+
+@media (min-width: 750px) {
+    .campaign-lounge-header {
+
+        height: 500px;
+    }
+
+    .campaign-lounge-header p {
+        max-width: 80%;
+    }
+
+    h1 {
+        margin-top: 140px;
+    }
+
+}
+
+
+@media (min-width: 1600px) {
+    .campaign-lounge-header {
+
+        height: 700px;
+    }
+
+    .campaign-lounge-header p {
+        max-width: 70%;
+        margin-bottom: 50px;
+    }
+
+    h1 {
+        margin-top: 300px;
+    }
+
+
+}

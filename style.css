@@ -170,6 +170,9 @@ li a {
 }
 
 
+
+
+
 /* second section */
 
 .get-inspired {
@@ -266,7 +269,7 @@ footer {
 
 
 
-@media (min-width: 1300px) {
+@media (min-width: 1000px) {
 
     :root {
         --padding-mobile: unset;
