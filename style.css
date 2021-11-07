@@ -189,6 +189,10 @@ li a {
     height: 400px;
 }
 
+.campaign-two h3 {
+    margin-top: 250px;
+}
+
 
 .campaign-two__image--1 {
     background-image: url("images/nine-koepfer-OZiflZqq0N0-unsplash\ kopi.jpg");
@@ -361,7 +365,7 @@ footer {
     }
 
     .campaign-two h3 {
-        margin-top: 350px;
+        margin-top: 300px;
     }
 
     .bestsellers-item img {
